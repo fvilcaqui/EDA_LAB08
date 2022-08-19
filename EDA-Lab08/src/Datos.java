@@ -1,11 +1,11 @@
 
 public class Datos {
 
-	int init, fin;
+	int init, fin,tam;
 	   
-	Datos(int init, int fin)
-	{
-	        this.init = init;
-	        this.fin = fin;
+	Datos(int tam,int init, int fin){
+		this.tam = tam;
+	    this.init = init;
+	    this.fin = fin;
     }
 }

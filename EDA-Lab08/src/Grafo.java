@@ -30,4 +30,8 @@ public class Grafo {
             src++;
         }
     }
+    
+    public static void DFS(Grafo grafo) {
+    	
+    }
 }
