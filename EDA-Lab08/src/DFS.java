@@ -1,35 +1,27 @@
 import java.util.List;
 
 public class DFS {
-	int temp,n,m;
-	boolean[] visit = new boolean[n];
-	Integer[] d = new Integer[m];
-	Integer[] f = new Integer[m];
+	static boolean[] visit = new boolean[100];
 
-	public void DFS(Grafo grafo) {
+	public static void DFS(Grafo grafo) {
 		for (int i = 0;i < grafo.lista.size();i++) {
             visit[i] = false;
         }
-		temp = 0;
 		for(int j = 0;j < grafo.lista.size();j++) {
 			if(visit[j] == false) {
-				Visitar(grafo,temp,j);
+				Visitar(grafo,j);
 			}
 		}
 	}
 	
-	public void Visitar(Grafo grafo ,int temp,int pos) {
+	public static void Visitar(Grafo grafo,int pos) {
 		visit[pos] = true;
 		System.out.println(pos);
-		temp = temp + 1;
-		d[pos] = temp; 
 		for(int a : grafo.lista.get(pos)) {
 			if (visit[a] == false) {
-				Visitar(grafo,temp,a);
 				System.out.println("a" + a);
+				Visitar(grafo,a);
 			}		
 		}
-		temp = temp + 1;
-		f[pos] = temp;
 	} 
 }
