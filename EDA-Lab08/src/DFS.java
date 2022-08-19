@@ -20,11 +20,13 @@ public class DFS {
 	
 	public void Visitar(Grafo grafo ,int temp,int pos) {
 		visit[pos] = true;
+		System.out.println(pos);
 		temp = temp + 1;
 		d[pos] = temp; 
 		for(int a : grafo.lista.get(pos)) {
 			if (visit[a] == false) {
 				Visitar(grafo,temp,a);
+				System.out.println("a" + a);
 			}		
 		}
 		temp = temp + 1;

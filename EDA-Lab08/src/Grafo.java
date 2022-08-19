@@ -31,7 +31,35 @@ public class Grafo {
         }
     }
     
-    public static void DFS(Grafo grafo) {
-    	
-    }
+	static int temp,n,m;
+	static boolean[] visit = new boolean[100];
+	static Integer[] d = new Integer[100];
+	static Integer[] f = new Integer[100];
+
+	public static void DFS(Grafo grafo) {
+		for (int i = 0;i < grafo.lista.size();i++) {
+            visit[i] = false;
+        }
+		temp = 0;
+		for(int j = 0;j < grafo.lista.size();j++) {
+			if(visit[j] == false) {
+				Visitar(grafo,temp,j);
+			}
+		}
+	}
+	
+	public static void Visitar(Grafo grafo ,int temp,int pos) {
+		visit[pos] = true;
+		System.out.println(pos);
+		temp = temp + 1;
+		d[pos] = temp; 
+		for(int a : grafo.lista.get(pos)) {
+			if (visit[a] == false) {
+				System.out.println("a" + a);
+				Visitar(grafo,temp,a);
+			}		
+		}
+		temp = temp + 1;
+		f[pos] = temp;
+	} 
 }
