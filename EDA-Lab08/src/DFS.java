@@ -1,6 +1,7 @@
 import java.util.List;
 
 public class DFS {
+	
 	static boolean[] visit = new boolean[100];
 
 	public static void DFS(Grafo grafo) {
@@ -23,5 +24,6 @@ public class DFS {
 				Visitar(grafo,a);
 			}		
 		}
-	} 
+	}
+	
 }

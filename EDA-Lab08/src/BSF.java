@@ -16,16 +16,18 @@ public class BSF {
 	
 	public static void VisitarBSF(Grafo grafo,int pos) {
 		visitBSF[pos] = true;
-		System.out.println(pos);
+		System.out.print(pos);
 		for(int a : grafo.lista.get(pos)) {
 			if (visitBSF[a] == false) {
+				System.out.print(a);
 				visitBSF[a] = true;
-				System.out.println(a);
-			}		
+			}	
 		}
-		for(int a : grafo.lista.get(pos)) {
-			VisitarBSF(grafo,a);		
+		for(int b : grafo.lista.get(pos)) {
+			if (visitBSF[b] == false) {
+				VisitarBSF(grafo,b);		
+			}
 		}
-		
-	} 
+	}
+	
 }

@@ -4,8 +4,9 @@ import java.util.List;
 
 public class Grafo {
 
+// La creacion del grafo
     List<List<Integer>> lista = new ArrayList<>();
-    
+   
     public Grafo(List<Datos> valores){
         int n = 0; 
         for (Datos e: valores) {
@@ -31,6 +32,7 @@ public class Grafo {
         }
     }
     
+ //Impletementando la busqueda DFS   
 	static boolean[] visitDFS = new boolean[100];
 
 	public static void DFS(Grafo grafo) {
@@ -54,6 +56,8 @@ public class Grafo {
 			}		
 		}
 	}
+	
+// Implementando la busqueda BSF	
 	static boolean[] visitBSF = new boolean[100]; 
 	
 	public static void BSF(Grafo grafo) {
