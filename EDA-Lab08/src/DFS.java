@@ -1,7 +1,8 @@
 import java.util.List;
 
 public class DFS {
-	
+	// Aqui se puede apreciar solo el algoritmo.
+
 	static boolean[] visit = new boolean[100];
 	public static void DFS(Grafo grafo) {
 		for (int i = 0;i < grafo.lista.size();i++) {
