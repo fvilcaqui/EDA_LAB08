@@ -3,7 +3,6 @@ import java.util.List;
 public class DFS {
 	
 	static boolean[] visit = new boolean[100];
-
 	public static void DFS(Grafo grafo) {
 		for (int i = 0;i < grafo.lista.size();i++) {
             visit[i] = false;
@@ -13,8 +12,7 @@ public class DFS {
 				Visitar(grafo,j);
 			}
 		}
-	}
-	
+	}	
 	public static void Visitar(Grafo grafo,int pos) {
 		visit[pos] = true;
 		System.out.println(pos);
