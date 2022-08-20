@@ -27,18 +27,20 @@
 <tr><th colspan="6">INFORMACIÓN BÁSICA</th></tr>
 </theader>
 <tbody>
-<tr><td>ASIGNATURA:</td><td colspan="5">Estructura de Datos y Algoritmos</td></tr>
-<tr><td>TÍTULO DE LA PRÁCTICA:</td><td colspan="5">Hash</td></tr>
+<tr><td>ASIGNATURA:</td><td colspan="5"> Estructura de Datos y Algoritmos </td></tr>
+<tr><td>TÍTULO DE LA PRÁCTICA:</td><td colspan="5"> Grafos </td></tr>
 <tr>
 <td>NÚMERO DE PRÁCTICA:</td><td>07</td><td>AÑO LECTIVO:</td><td>2022 A</td><td>NRO. SEMESTRE:</td><td>III</td>
 </tr>
 <tr>
-<td>FECHA INICIO::</td><td>10-Agosto-2022</td><td>FECHA FIN:</td><td>14-Agosto-2022</td><td>DURACIÓN:</td><td>02 horas</td>
+<td>FECHA INICIO::</td><td>17-Agosto-2022</td><td>FECHA FIN:</td><td>21-Agosto-2022</td><td>DURACIÓN:</td><td>02 horas</td>
 </tr>
 <tr><td colspan="6">RECURSOS:
     <ul>
-       <li> Weiss M., Data Structures & Problem Solving Using Java, 2010, Addison-Wesley.
-       <li>https://www.cpp.edu/~ftang/courses/CS240/lectures/hashing.htm
+      <li> Weiss M., Data Structures & Problem Solving Using Java, 2010, Addison-Wesley.
+      <li> Escuela de Pedagogía en Educación Matemática, Marcelino Álvarez, et.al.,
+      <li> http://repobib.ubiobio.cl/jspui/bitstream/123456789/1953/3/Alvarez_Nunez_Marcelino.pdf
+      <li> http://www.oia.unsam.edu.ar/wp-content/uploads/2017/11/dijkstra-prim.pdf
     </ul>    
 </td>
 </<tr>
