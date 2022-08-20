@@ -1,8 +1,8 @@
 
 public class BSF {
-	
+	// Aqui se puede apreciar solo el algoritmo.
+
 	static boolean[] visitBSF = new boolean[100]; 
-	
 	public static void BSF(Grafo grafo) {
 		for (int i = 0;i < grafo.lista.size();i++) {
             visitBSF[i] = false;

@@ -37,7 +37,7 @@ public class Grafo {
 
 	public static void DFS(Grafo grafo) {
 		for (int i = 0;i < grafo.lista.size();i++) {
-            visitDFS[i] = false;
+            visitDFS[i] = false; 	
         }
 		for(int j = 0;j < grafo.lista.size();j++) {
 			if(visitDFS[j] == false) {
@@ -48,10 +48,9 @@ public class Grafo {
 	
 	public static void VisitarDFS(Grafo grafo,int pos) {
 		visitDFS[pos] = true;
-		System.out.println(pos);
+		System.out.print(pos);
 		for(int a : grafo.lista.get(pos)) {
 			if (visitDFS[a] == false) {
-				System.out.println("a" + a);
 				VisitarDFS(grafo,a);
 			}		
 		}
@@ -93,19 +92,22 @@ public class Grafo {
 	static String val2 = "";
 	public static boolean Inclusion(Grafo grafo1, Grafo grafo2) {
 		for (int i = 0;i < grafo2.lista.size();i++) {
+			igual[i] = false;
 			for (int j = 0;j < grafo1.lista.size();j++) {
 				for(int a: grafo2.lista.get(i)) {
-					val1 += a;
-		        } 
+					val1 += "" + a;
+		        }
 				for (int b: grafo1.lista.get(j)) {
-	                val2 += b;
+	                val2 += "" + b;
 					if(val1.equals(val2)) {
 						igual[i] = true;
+						break;
 					}
-	            } 
+	            }
 				val2="";
 				val1="";
 			}
+		
 		}
 		return comprobar(igual,grafo2);
 	}
@@ -117,11 +119,9 @@ public class Grafo {
 				j++;
 			}
 		}
-		System.out.println(j + " " + val2);
 		if(k == j) {
 			return true;
 		}
 		return false;
 	}
-	
 }

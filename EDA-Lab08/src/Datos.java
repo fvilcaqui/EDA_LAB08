@@ -1,6 +1,5 @@
 
 public class Datos {
-
 	int init, fin,tam;
 	   
 	Datos(int tam,int init, int fin){
